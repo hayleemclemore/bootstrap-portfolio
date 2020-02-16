@@ -259,6 +259,11 @@ input#exampleInputMessage1 {
 
   }
 
+  .navbar-brand {
+    width: 230px;
+    font-size: 20px;
+  }
+
   nav a {
     margin: 10px;
     border-left: none;
