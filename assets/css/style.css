@@ -3,7 +3,9 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/dot-grid.png");
+  margin: 0;
+  padding:0;
 }
 
 * {
@@ -65,10 +67,10 @@ h3 {
 
 .navbar-brand {
   float: left;
-  width: 250px;
+  width: 365px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 90px;
   color: #ffffff;
@@ -107,6 +109,7 @@ nav a:first-child {
 /* footer */
 
 footer {
+  padding: 35px 0;
   clear: both;
   font-size: 12px;
   color: #ffffff;
@@ -114,7 +117,7 @@ footer {
   text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
-  padding: 20px 0px;
+  height: 100%;
 }
 
 h3, h2 {
@@ -128,14 +131,17 @@ h3, h2 {
 
 .main-container {
   padding-top: 130px;
-  min-height: calc(100vh - 70px);
+  /* min-height: calc(100vh - 70px); */
+
+  
 }
 
 .main-section {
+  padding-top: 130px;
   float: left;
   width: 100%;
   max-width: 960px;
-  padding: 30px;
+  padding: 30px 40px;
   margin: 0 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
@@ -152,6 +158,9 @@ h3, h2 {
   overflow: auto;
 }
 
+.img-thumbnail {
+  padding: 0;
+}
 .work:nth-child(even) {
   margin-right: 40px;
 }
@@ -178,7 +187,6 @@ h3, h2 {
 
 .auth-image {
   float: left;
-  width: 200px;
   height: auto;
   margin-top: 10px;
   margin-right: 25px;
@@ -217,7 +225,7 @@ input#exampleInputMessage1 {
 
 @media (min-width: 992px) {
 .navbar-expand-lg .navbar-nav {
-  padding: 20px;
+  /* padding: 20px; */
 }
 }
 
@@ -232,6 +240,10 @@ input#exampleInputMessage1 {
     position:static;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   #logo {
     width:100%;
   }
@@ -242,8 +254,14 @@ input#exampleInputMessage1 {
     margin-top: 0;
   }
 
+  .navbar-light .navbar-toggler {
+    margin-right: 15px;
+
+  }
+
   nav a {
     margin: 10px;
+    border-left: none;
   }
 
   .main-container {
@@ -259,6 +277,10 @@ input#exampleInputMessage1 {
     list-style: none;
     padding-left: 0;
     
+  }
+
+  .work {
+    width: 100%;
   }
   /* .collapse:not(.show) {
     display: block;
